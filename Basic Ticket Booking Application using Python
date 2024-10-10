@@ -1,0 +1,35 @@
+print("Welcome ! \nList of Cities:")
+  print('Gdansk')
+  print('Poznan')
+  print('Krakow')
+  print('Lodz')
+  print('Bialystok')
+  print('Lublin')
+  print('Wroclaw')
+  print('Bydygoszcz')
+  print('Katowice')
+  print('Zakopane')
+
+city = input("Which City You want to Travel:")
+ticket = input('Total Number of Tickets:')
+print(city,'\n', ticket)
+
+city_prices = {
+    'Gdansk' : 500,
+    'Poznan' : 450,
+    'Krakow' : 465,
+    'Lodz' : 300,
+    'Bialystok' : 200,
+    'Lublin' : 280,
+    'Wroclaw' : 425,
+    'Bydygoszcz' : 390,
+    'Katowice'  : 430,
+    'Zakopane' : 480
+} # Using Dictionary  
+
+if city in city_prices:
+    print('Cost of 1 Ticket:', city_prices[city])
+    print("Total Cost of Tickets:", city_prices[city]*int(ticket))
+    print('Thank You !\nHave a Wonderful Journery')
+else:
+    print('Invalid Input')
